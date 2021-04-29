@@ -1,12 +1,22 @@
 # Rock paper scissors in Estonian
 import random
 
-print("Vastake väikeste tähemärkidega!")
-
 draw = False
 victory = None
-opponent = ""
-user = input("Kivi paber või käärid? ")
+opponent = ''
+user = ''
+
+while True:
+    user = input("Kivi paber või käärid?: ")
+    if user == 'kivi' or user == 'paber' or user == 'käärid':
+        break
+
+    if user == 'exit':
+        exit()
+    else:
+        print("Programm sai vale sisendi!")
+        print("Sisestage väikeste tähemärkidega kivi, paber või käärid")
+        print("Kui soovite väljuda programmist kirjutage exit või vajutage CTRL+C")
 
 def cpuresult():
     results = ['kivi','paber','käärid']
@@ -26,9 +36,6 @@ def compare(o, u):
         result = False
     elif o == 'kivi' and u == 'paber':
         result = True
-    else:
-        print("Arvuti ei saanud sobivat sisendit!")
-        print("Palun sisestage kivi, paber või käärid!")
     return result
 
 opponent = cpuresult()
