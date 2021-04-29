@@ -21,7 +21,7 @@ def compare(o, u):
     elif o == 'kivi' and u == 'käärid':
         result = False
     elif o == 'käärid' and u == 'kivi':
-        result == True
+        result = True
     elif o == 'paber' and u == 'kivi':
         result = False
     elif o == 'kivi' and u == 'paber':
@@ -31,7 +31,7 @@ def compare(o, u):
         print("Palun sisestage kivi, paber või käärid!")
     return result
 
-opponent = cpuresult()
+opponent = 'käärid'
 print("Arvuti vastas: " + opponent)
 
 if opponent == user:
