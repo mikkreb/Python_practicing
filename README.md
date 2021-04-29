@@ -1,0 +1,1 @@
+This is a repository for improving Python skills through random ideas.
