@@ -31,7 +31,7 @@ def compare(o, u):
         print("Palun sisestage kivi, paber või käärid!")
     return result
 
-opponent = 'käärid'
+opponent = cpuresult()
 print("Arvuti vastas: " + opponent)
 
 if opponent == user:
