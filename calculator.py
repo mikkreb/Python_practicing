@@ -13,8 +13,8 @@ def divide (x, y):
     return x / y
 
 uinput = input("Add, subtract, multiply or divide?: ")
-x = float(input("First float"))
-y = float(input("Second float"))
+x = float(input("First float: "))
+y = float(input("Second float: "))
 
 if uinput == 'add':
     result = add(x, y)
@@ -28,4 +28,4 @@ if uinput == 'multiply':
 if uinput == 'divide':
     result = divide(x, y)
 
-print("The answer is " + result)
+print("The answer is " + str(result))
