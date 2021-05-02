@@ -1,4 +1,5 @@
 #a simple terminal based calculator made in Python
+#currently handles addition, subtraction, multiplying and dividing
 
 def add(x, y):
     return x + y
