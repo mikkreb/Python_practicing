@@ -29,4 +29,4 @@ if uinput == 'multiply':
 if uinput == 'divide':
     result = divide(x, y)
 
-print("The answer is " + str(result))
+print("\nThe answer is " + str(result))
